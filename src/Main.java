@@ -4,6 +4,8 @@ public class Main {
         task1();
         System.out.println(" Task 2");
         task2();
+        System.out.println(" Task 3");
+        task3();
     }
     public static void task1(){
         String firstName = "Ivan ";
@@ -16,5 +18,14 @@ public class Main {
         String fullName = "Ivanov Ivan Ivanovich";
         fullName = fullName.replace("Ivanov Ivan Ivanovich","IVANOV IVAN IVANOVICH");
         System.out.println("Данные ФИО сотрудника для заполнения отчета — "+fullName);
+    }
+    public static void task3(){
+        String fullName = "Иванов Семён Семёнович";
+        for (int i = 0; i < fullName.length(); i++){
+            if (fullName.charAt(i) == 'ё'){
+                fullName = fullName.replace("ё", "е");
+            }
+        }
+        System.out.println("Данные ФИО сотрудника — "+fullName);
     }
 }
